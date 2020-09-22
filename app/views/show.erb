@@ -2,7 +2,7 @@
 <p>Ingredients: <%= @recipe.ingredients %></p>
 <p>Cook Time: <%= @recipe.cook_time %> minutes</p>
 <a href="/recipes/<%= @recipe.id %>/edit">Edit</a>
-<form action="/recipes/<%= @recipe.id %>/delete" method="POST">
+<form action="/recipes/<%= @recipe.id %>" method="POST">
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" name="delete" value="delete">
 </form>
